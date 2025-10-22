@@ -10,7 +10,7 @@ public class MoveBehaviour : MonoBehaviour
     }
     public void MoveCharacter(Vector2 direction)
     {
-        _rb.linearVelocity = direction.normalized * speed;
+        _rb.linearVelocity = direction * speed;
     }
     public void Jump()
     {
